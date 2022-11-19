@@ -4,7 +4,7 @@
   --color-title: #212121;
   --color-uptitle: #757575;
   --color-logo: #000000;
-  --color-icon:#afb1b8
+  --color-icon: #afb1b8;
 }
 
 h1,
@@ -98,6 +98,7 @@ body {
   list-style: none;
   display: flex;
   gap: 50px;
+  align-items: baseline;
 }
 .header-nav-link {
   padding-top: 32px;
@@ -108,6 +109,7 @@ body {
   text-decoration: none;
   color: var(--color-title);
 }
+
 .header-nav-color {
   color: var(--color-uptitle);
 }
@@ -311,7 +313,8 @@ body {
 .team-soc-icon {
 }
 
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus{
   background-color: var(--color-blue);
   fill: var(--color-white);
 }
@@ -322,7 +325,7 @@ body {
 }
 
 .client-title {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -330,7 +333,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-title);
 }
-
 
 .client-list {
   display: flex;
@@ -347,29 +349,25 @@ body {
 .client-link {
   width: 100%;
   height: 100%;
-  border: 1px solid #afb1b8;
   border-radius: 4px;
+  border: 1px solid #afb1b8;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-}
-.client-icon {
-    fill:var(--color-icon);
+  fill: var(--color-icon);
 }
 
-.client-item:hover{
-    border: 1px solid var(--color-blue);
+.client-link:hover,
+.client-link:focus{
+  border: 1px solid var(--color-blue);
+  fill: var(--color-blue);
 }
-.client-icon:hover{
-    fill:var(--color-blue);
-}
-
 
 /*----------------------------Contacts------------------*/
 
 .contacts-container {
-  display: block;
+  display: flex;
+  align-items: baseline;
 }
 
 .contacts {
@@ -411,6 +409,49 @@ body {
   color: var(--color-white);
 }
 
+.footer-conteiner {
+  margin-left: 70px;
+}
+
+.footer-text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  fill: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus{
+  background-color: var(--color-blue);
+}
+
+.footer-soc-icon {
+}
+
 /*----------------------------------------------PORTFOLIO-----------------------------*/
 
 .examples {
@@ -434,6 +475,8 @@ body {
 .examples-btn:focus {
   background-color: var(--color-blue);
   color: var(--color-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .examples-btn {
@@ -453,6 +496,16 @@ body {
 
 .examples-item {
   flex-basis: 370px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.examples-item:hover {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .examples-img {
@@ -460,9 +513,6 @@ body {
 
 .examples-text {
   padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .examples-title {
