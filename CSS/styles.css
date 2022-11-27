@@ -61,8 +61,7 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
 
 /*-------------------------Header------------------------*/
@@ -141,6 +140,8 @@ body {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -380,6 +381,7 @@ body {
 .logo-contacts {
   color: var(--color-white);
   margin-bottom: 20px;
+  display: block;
 }
 
 .contacts-adress {
